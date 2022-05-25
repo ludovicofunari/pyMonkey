@@ -1,17 +1,21 @@
 # pyMonkey
 
-This tiny python script will kill one pod of the [mSvcBench/MicroServiceSimulator](https://github.com/mSvcBench/MicroServiceSimulator) every chosen second.
+This *tiny* Python script will kill one POD of the [mSvcBench/MicroServiceSimulator](https://github.com/mSvcBench/MicroServiceSimulator) every *chosen* second.
 
-First, install the dependencies:
+**1.** First, clone this repository and change the directory:
+```bash
+> git clone https://github.com/ludovicofunari/pyMonkey.git
+> cd pyMonkey
+```
 
+**2.** Then install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-Then, run (on the Kubernetes master node) the following command to kill one pod every 10 seconds:
-
+**3.** Finally, run (on the Kubernetes master node) the following command to kill one pod every 20 seconds:
 ```
-$ python pymonkey.py --kill-time 20
+> python pymonkey.py --kill-time 20
 
 #### pyMonkey will kill for you a pod of uBench each 20 seconds ####
 
